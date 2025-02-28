@@ -24,8 +24,13 @@ const FormRender: React.FC<ILayoutProps> = ({ isMobile }) => {
 
 	const handleSubmit = () => {
 		if (!builderForm?.length) return;
-		const hasError = builderForm?.some((q, index) => q.required === BOOLEAN.YES && !values[index + 1]?.trim());
-		if (hasError) return Toasty.error('Please fill all required fields!');
+		const hasError = builderForm?.some(
+			(q, index) =>
+				(q.required === BOOLEAN.YES && !values[index + 1]?.trim()) ||
+				(q.type === TYPE.NUMBER && q.min && +values[index + 1]?.trim() < q.min) ||
+				(q.type === TYPE.NUMBER && q.max && +values[index + 1]?.trim() > q.max),
+		);
+		if (hasError) return Toasty.error('Validation Failed!');
 
 		Toasty.success('Form submitted successfully!');
 	};
