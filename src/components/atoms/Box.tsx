@@ -7,10 +7,11 @@ export interface IBoxProps extends React.CSSProperties {
 	id?: string;
 	className?: string;
 	ref?: React.RefObject<HTMLDivElement>;
+	dataTestid?: string;
 }
 
 const Box = React.forwardRef<HTMLDivElement, IBoxProps>(
-	({ children, className, hover, onClick, id, ...props }, ref) => {
+	({ children, className, hover, onClick, id, dataTestid, ...props }, ref) => {
 		const [isHovered, setIsHovered] = useState<boolean>(false);
 
 		const handleMouseEnter = () => setIsHovered(true);
@@ -19,6 +20,7 @@ const Box = React.forwardRef<HTMLDivElement, IBoxProps>(
 
 		return (
 			<div
+				data-testid={dataTestid}
 				className={className}
 				id={id}
 				ref={ref}
