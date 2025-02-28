@@ -147,7 +147,7 @@ const FormBuilder: React.FC<ILayoutProps> = ({ isMobile }) => {
 						width={isMobile ? '50%' : 'fit-content'}
 						variant="outlined"
 						onClick={handleReset}>
-						Rest
+						Reset
 					</Button>
 					<Button
 						startIcon={<Plus size={16} />}
