@@ -67,7 +67,7 @@ const FormRender: React.FC<ILayoutProps> = ({ isMobile }) => {
 						<Typography fontWeight={600}>
 							{`Q${key}: `}
 							{q.title}
-							{` `}
+							{`${finalType === TYPE.NUMBER.toLowerCase() && q.unit ? ` (in ${q.unit}) ` : ' '}`}
 							{isRequired && <span style={{ color: 'red' }}>*</span>}
 						</Typography>
 						{finalType === TYPE.SELECT.toLowerCase() ? (
