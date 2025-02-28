@@ -1,4 +1,4 @@
-# Form Builder 🚀
+# Form Builder 🚀 [Live](https://form-builder1.netlify.app/)
 
 A dynamic form builder and renderer with real-time validation and auto-save functionality.
 
@@ -28,11 +28,11 @@ A dynamic form builder and renderer with real-time validation and auto-save func
 
 ### Destop View
 
-https://github.com/user-attachments/assets/73c24844-4709-4ed7-bcf4-f0b63efe2523
+[Desktop Demo](https://github.com/user-attachments/assets/73c24844-4709-4ed7-bcf4-f0b63efe2523)
 
 ### Mobile View
 
-https://github.com/user-attachments/assets/be7845b9-cd54-4b2b-a596-67f6a685e289
+[Mobile Demo](https://github.com/user-attachments/assets/be7845b9-cd54-4b2b-a596-67f6a685e289)
 
 ### Lighthouse Report
 
