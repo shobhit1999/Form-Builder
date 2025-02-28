@@ -1,0 +1,37 @@
+@-webkit-keyframes grow {
+	from {
+		max-height: 0;
+	}
+
+	to {
+		max-height: 200px;
+	}
+}
+
+@keyframes grow {
+	from {
+		max-height: 0;
+	}
+
+	to {
+		max-height: 200px;
+	}
+}
+
+.grow {
+	-webkit-animation-name: grow;
+	animation-name: grow;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
